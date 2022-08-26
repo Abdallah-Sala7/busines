@@ -213,6 +213,10 @@ header .header-contint .btn-contint {
 
 /* ******************consultancy*************** */
 
+.consultancy{
+  background: url(../images/pattern.webp) center center /  cover no-repeat;
+}
+
 .consultancy-contint{
   display: flex;
   justify-content: space-between;
@@ -262,4 +266,118 @@ header .header-contint .btn-contint {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* *****************expriance****************** */
+
+.expriance-contint{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expriance-contint .expriance-img{
+  width: 40%;
+}
+
+.expriance-contint .expriance-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.expriance-contint .expriance-data{
+  width: 60%;
+  padding: 0 40px;
+  background: url(../images/pattern.webp) center right /  contain no-repeat;
+}
+
+.expriance-contint .expriance-data .experiance-desc{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.expriance-contint .expriance-data .experiance-desc .experiance-text{
+  width: 45%;
+  font-size: .9rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+.expriance-contint .expriance-data .experiance-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.expriance-contint .expriance-data .experiance-info-box{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.expriance-contint .expriance-data .experiance-info-box .experiance-info-img{
+  width: 170px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  transition: 0.9s;
+}
+
+.expriance-contint .expriance-data .experiance-info-box .experiance-info-img svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170px;
+  height: 170px;
+  transform: rotate(270deg);
+}
+
+.expriance-contint .expriance-data .experiance-info-box .experiance-info-img svg circle{
+  fill: transparent;
+  width: 100%;
+  height: 100%;
+  stroke: var(--light-gray);
+  stroke-width: 8;
+  transform: translate(5px, 5px);
+}
+
+.expriance-contint .expriance-data .experiance-info-box .experiance-info-img svg circle:nth-child(2){
+  stroke: var(--secondary);
+  stroke-dasharray: 450;
+  stroke-dashoffset: 385;
+  transition: 1s;
+}
+
+.expriance-contint .expriance-data .experiance-info.active .experiance-info-box .experiance-info-img svg circle:nth-child(2){
+  stroke-dashoffset: 5;
+}
+
+.expriance-contint .expriance-data .experiance-info-box .experiance-info-img img{
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: var(--img-primary);
+}
+
+.expriance-contint .expriance-data .experiance-info-box .experiance-info-title{
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--primary);
+  margin-bottom: 1em;
+}
+
+.expriance-contint .expriance-data .experiance-info-box .experiance-info-desc{
+  font-size: .8rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
 }

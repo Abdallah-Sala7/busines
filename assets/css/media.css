@@ -1,5 +1,23 @@
-@media screen and (max-width: 900px) {
+@media (min-width: 768px) { 
+  .container{max-width: 720px;}
+
+  section{
+    padding: 80px 0;
+  }
+  
+  .section-title{
+    margin-bottom: 50px;
+  }
+
+  .section-title h1{
+    font-size: 30px;
+  }
+
   .section-contint {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item .item-body .item-data .item-title{
+    font-size: 23px;
   }
 }
